@@ -1,7 +1,7 @@
 # Creative Passport
 
 This project is the result of the Music Tech Fest Mycelia Lab that took place in Stockholm
-at the KTH in September 4-7. The Lab was lead by Imogen Heap, who came up with the idea
+at the KTH in September 4-7, 2018. The Lab was lead by Imogen Heap, who has come up with the idea
 of [Mycelia for music and the creative passport](http://myceliaformusic.org/creative-passport/).
 
 This project is the start to an artist's dashboard with which an artist can manage
@@ -9,7 +9,7 @@ all the information that would be included in their creative passport. This proj
 is based on the [graph-application](https://github.com/katsi/graph-application) tutorial,
 which is a simple web application that is talking to the graph database Blazegraph.
 
-![](images/first_page)
+![](images/first_page.png)
 
 ## Credits
 This project gets its good looks from the
@@ -37,7 +37,7 @@ If you downloaded this repository, most likely a ZIP file is in your
 the folder, for example with:
 
 ```
-cd Downloads/graph-application-master/
+cd Downloads/creative-passport-dashboard-master/
 ```
 
 
@@ -64,23 +64,16 @@ To see the dashboard for Blazegraph, navigate with your browser to the [localhos
 
 ### Add Data to Blazegraph
 
-Make sure you have Blazegraph running. You can see that it is running by typing
-
-```
-docker ps
-```
-
 Navigate to the dashboard of Blazegraph [localhost port 8889](http://localhost:8889/bigdata/)
 and choose the tab "Update"
 
 ![](images/blazegraph_screenshot.png)
 
 Below the big text edit field, you can spot a button saying "Choose file". This is where you can upload
-the following RDF Data files:
+the following RDF Data files found in the data folder of this project:
 - [Turtle file on events](data/events.ttl)
 - [Turtle file on songs](data/songs.ttl)
 
-found in the data folder of this tutorial.
 
 Add the files one by one. The contents of each TTL file appears in the empty text box and by
 clicking "Update" below the contents of one file is uploaded in the graph database. Repeat this
@@ -91,7 +84,8 @@ step for the second file.
 The dashboard is build using a
 simple [express JavaScript](https://expressjs.com/en/starter/installing.html) file and
 several [Embedded JavaScript](http://ejs.co/) template files
-to render the views of the dashboard with data coming out of the graph.
+to render the views of the dashboard with data coming out of the graph
+and with parameters passed to the views.
 
 Navigate to the local folder of this project (it would be called `creative-passport-dashboard` or `creative-passport-dashboard-master`).
 
@@ -125,4 +119,4 @@ node index.js
 ```
 
 Navigate with your browser to [http://localhost:3001/pages/dashboard.html](http://localhost:3001/pages/dashboard.html)
-and you should see the first page.
+and you should see the first page of the dashboard.

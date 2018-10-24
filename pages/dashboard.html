@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+.user-l {
+padding-right: 6px;
+}
+.user-r {
+padding-left: 6px;
+}
+.user-l >img,
+.user-r >img {
+width: 150px;
+}
+.redes >ul li a {
+width: 42px;
+margin-left: 5px;
+margin-right: 5px;
+text-align: center;
+border-radius: 10em;
+border: #EEE 1px solid;
+}
+.redes >ul li span {
+color: #CCC;
+font-size: 18px;
+}
+.image_ava img {
+border-radius: 10em!important;
+width: 150px;
+}
+.bio {
+float: left;
+position: absolute;
+top: -45px;
+left: 10px;
+color: #FFF;
+}
+.bio2 {
+float: right;
+position: absolute;
+top: -45px;
+left: 10px;
+color: #FFF;
+}
+.bio_content {
+padding: 6px 10px;
+}
+/* New's panels */
+.paneles-usuario {
+padding: 6px 0;
+text-align: center;
+}
+.paneles-usuario .bloques {
+border: 1px solid #CCC;
+width: 30%;
+display: inline-block;
+text-align: center;
+margin-left: -3.7px;
+padding: 2px 8px;
+}
+.paneles-usuario .bloques i {
+display: block;
+font-size: 32px;
+color: #FFF;
+margin-bottom: -8px;
+padding: 5px 0!important;
+}
+.paneles-usuario .bloques span {
+font-size: 11px;
+text-transform: uppercase;
+color: #FFF;
+}
+.bgf {
+background-color: #3b5998;
+}
+.bgt {
+background-color: #55acee;
+}
+.bgg {
+background-color: #dd4b39;
+}
+/* Beta2 */
+.paneles-usuario-beta2 {
+padding: 6px 0;
+text-align: center;
+float: right;
+position: absolute;
+top: 4em;
+left: .2em;
+height: auto;
+width: 80px;
+}
+.paneles-usuario-beta2 .bloques {
+border: 1px solid #CCC;
+width: 100%;
+display: block;
+text-align: center;
+padding: 2px 8px;
+}
+.paneles-usuario-beta2 .bloques i {
+display: block;
+font-size: 32px;
+color: #FFF;
+padding: 5px 0!important;
+}
+.paneles-usuario-beta2 .bloques span {
+font-size: 11px;
+text-transform: uppercase;
+color: #FFF;
+}
+.bgf {
+background-color: #3b5998;
+}
+.bgt {
+background-color: #55acee;
+}
+.bgg {
+background-color: #dd4b39;
+}
+
+</style>
+
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+            <div class="sidebar-wrapper navi_side">
+                <div class="logo">
+                    <a href="#" class="simple-text">
+                        <img src="../assets/img/logo.png" height="100">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="far fa-user"></i>
+                            <p>USER PROFILE</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link"><i class="far fa-newspaper"></i> PRESS KIT</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      <a class="nav-link" href="/biography">Biography</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="roles.html">Roles</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="photo-gallery.html">Photos</a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="/songs">Discography</a>
+                  </li>
+              </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/events">
+                            <i class="far fa-calendar-alt"></i>
+                            <p>EVENTS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="accountsandids2.html">
+                            <i class="far fa-id-card"></i>
+                            <p>ACCOUNTS & IDS	</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-users"></i>
+                            <p>CONNECTIONS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="far fa-bell"></i>
+                            <p>NOTIFICATIONS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h5 class="card-header text-center bg-dark text-white">Artist's Profile</h5>
+                                                        <div class="card-body">
+                                <div class="image_ava">
+                                    <img src="https://dgm-seekr.azureedge.net/creativepassport/press-pic.jpg" class="img-thumbnail rounded mx-auto d-block" alt="avatar"/>
+                                </div>
+                                <h4 class="card-title text-center">Imogen Heap</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h5 class="card-header text-center bg-dark text-white">Main info</h5>
+
+                            <div style="padding: 30px;">
+                                <!-- ↓ Redes ↓ -->
+                                <h4><strong>PASSPORT ID:</strong><br>did:mycelia:163756582awrdrfgfi</h4><br>
+                                <h4><strong>Artist's names:</strong><br>IMOGEN HEAP</h4><br>
+                                <h4><strong>Full name:</strong><br>IMOGEN JENNIFER JANE HEAP</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h5 class="card-header text-center bg-dark text-white">More info</h5>
+                            <div style="padding: 30px;">
+                                <!-- ↓ Redes ↓ -->
+                                <h4><strong>Date of birth:</strong><br>9.12. 1977</h4><br>
+                                <h4><strong>Birthplace:</strong><br>Havering-atte-Bower, United Kingdom</h4><br>
+                                <h4><strong>Residence:</strong><br>London, United Kingdom</h4><br>
+                                <h4><strong>Verified by:</strong><br>Zoe Keating, Amanda Palmer, Guy Sigsworth...</h4><br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1><strong>Contacts & Team</strong></h1>
+                        <br>
+                        <div style="width: 30%; height: 5px; background: -moz-linear-gradient(left, rgba(255,91,240,1) 0%, rgba(91,197,255,1) 100%) !important; /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, rgba(255,91,240,1) 0%,rgba(91,197,255,1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to left, rgba(255,91,240,1) 0%,rgba(91,197,255,1) 100%) !important;"></div>
+                        <br>
+                        <style type="text/css">
+                            .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+                            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+                            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+                            .tg .tg-dvid{font-weight:bold;background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
+                            .tg .tg-c6of{background-color:#ffffff;border-color:inherit;text-align:left;vertical-align:top}
+                            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+                            .tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+                        </style>
+                        <table class="tg" style="undefined;table-layout: fixed; width: 497px">
+                            <colgroup>
+                                <col style="width: 169px">
+                                <col style="width: 328px">
+                            </colgroup>
+                            <tr>
+                                <th class="tg-dvid">Management:</th>
+                                <th class="tg-c6of">self-managed</th>
+                            </tr>
+                            <tr>
+                                <td class="tg-dvid">Booking agents:</td>
+                                <td class="tg-0pky">Matt Copley - Primary (UK, ROW)</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-fymr"></td>
+                                <td class="tg-0pky">Jenna Adler - CAA Booking (Canada, Mexico, USA</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-dvid">Label(s):</td>
+                                <td class="tg-0pky">Megaphonic Records</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-dvid">Publisher(s):</td>
+                                <td class="tg-0pky">Megaphonic Publishing</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-dvid">Appearances &amp; PR:</td>
+                                <td class="tg-0pky">Alexis Michallek (Megaphonic)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--   -->
+    <!-- <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple active" data-color="purple"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="..//assets/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block btn-fill">Download, it's free!</a>
+                </div>
+            </li>
+
+            <li class="header-title pro-title text-center">Want more components?</li>
+
+            <li class="button-container">
+                <div class="">
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
+                </div>
+            </li>
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+            </li>
+        </ul>
+    </div>
+</div>
+ -->
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>-->
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+        demo.showNotification();
+
+    });
+</script>
+
+</html>
